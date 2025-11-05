@@ -19,7 +19,7 @@ def index():
 #    Located at: http://127.0.0.1:8000/AnyNameHere
 @app.get('/{name}')
 def get_name(name: str):
-    return {'Welcome To Krish Youtube Channel': f'{name}'}
+    return {'Welcome To BankNote Detector': f'{name}'}
 
 # 3. Expose the prediction functionality, make a prediction from the passed
 #    JSON data and return the predicted Bank Note with the confidence
@@ -45,4 +45,5 @@ def predict_banknote(data:BankNote):
 if __name__ == '__main__':
     uvicorn.run(app, host='127.0.0.1', port=8000)
     
+
 #uvicorn app:app --reload
